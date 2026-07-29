@@ -3,77 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freakybob.site shot dead in the bronx</title>
-    <meta content='Freakybob.site shot dead in the Bronx' property='og:title' />
-    <meta content='RIP | Formerly a pineapple, now home to a monkey. | Random monkey image provided by https://placemonkeys.com' property='og:description'/>
-    <meta content='https://freakybob.site' property='og:url' />
-    <meta property="og:image" content="https://www.placemonkeys.com/500/350?random&greyscale" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        html,
-        body {
-            height: 100%;
-            overflow: hidden;
-        }
-
-        body {
-            background-image: url("bg.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
-            color: white;
-            font-family: system-ui, sans-serif;
-            padding-top: 40px;
-            padding-left: 40px;
-        }
-
-        h1 {
-            font-size: 4rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-
-        a {
-            color: #ffcc66;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(255, 204, 102, 0.3);
-        }
-
-        a:hover {
-            color: #ffdd88;
-            border-bottom-color: #ffdd88;
-        }
-
-        main img {
-            max-width: 300px;
-            height: auto;
-            display: block;
-            margin-top: 20px;
-        }
-    </style>
+    <title>redirecting...</title>
 </head>
-
 <body>
-    <main>
-        <h1>dead site</h1>
-        <p>since i'm so evil just go look at my site and shit <a href="https://squirrelz.xyz">squirrelz.xyz</a> or mine <a href="https://wish13yt.github.io">wish13yt.github.io</a>!</p>
-        <img id="monkey" src="https://www.placemonkeys.com/500/350?random&greyscale">
-        <a href="https://www.placemonkeys.com">Monkeys provided by Placemonkeys</a>
-        <p>----</p>
-        <p>not associated with viacom, any affilates, or entities mentioned in the URL and/or page | <a href="https://github.com/5quirre1/freakybob">licensed under GPL-3.0</a></p>
-        <script>
-            let options = ["&greyscale", "&sepia", "&blur", "&spooky", ""];
-            let random = options.sort(() => 0.5 - Math.random())[0];
-            document.getElementById("monkey").src = "https://www.placemonkeys.com/500/350?random" + random;
-        </script>
-    </main>
+    <script>
+        const websites = [
+            "https://squirrelz.xyz",
+            "https://wish13yt.github.io",
+            "https://nomaakip.xyz",
+            "https://swag.nomaakip.xyz"
+        ];
+
+        const randomSite = websites[Math.floor(Math.random() * websites.length)];
+        window.location.replace(randomSite);
+    </script>
+
+    <p>If you aren't redirected automatically, <a id="link" href="#">click here</a>.</p>
+
+    <script>
+        document.getElementById("link").href = randomSite;
+    </script>
 </body>
 </html>
